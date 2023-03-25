@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="datacol">
+        <ul >
+            <% data1.forEach(function(i) { %>
+            <li><h3 style="display: inline;color: black;margin-right: 10px;">First Name :</h5><%= i.fname %></li>
+            <li><h3 style="display: inline;color: black;margin-right: 10px;">Last Name :</h5> <%= i.lname %></li>
+            <li><h3 style="display: inline;color: black;margin-right: 10px;">Email  :</h5><%= i.email %></li>
+            <li><h3 style="display: inline;color: black;margin-right: 10px;">Phone number  :</h5><%= i.phonenumber %></li>
+            <hr>
+            <%}) %>
+        </ul>
+    </div>
+<div class="nav">
+    <a class="a" href="/signin" type="submit">signup</a>
+    <a class="a" href="/signin" type="submit">signin</a>
+</div>
+</body>
+</html>
